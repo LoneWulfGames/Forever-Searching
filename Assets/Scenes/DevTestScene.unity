@@ -829,6 +829,7 @@ MonoBehaviour:
   speed: 6
   jumpSpeed: 8
   gravity: 20
+  mob: {fileID: 0}
 --- !u!114 &2005430465
 MonoBehaviour:
   m_ObjectHideFlags: 0

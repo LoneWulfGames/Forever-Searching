@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 public enum Races {
-    TERR, DWARF, HALFLING, GNOME,
+    HUMAN, DWARF, HALFLING, GNOME,
     OGRE, TROLL, GOBLIN, GREMLIN,
     LIGHTELF, WOODELF, SHADOWELF, PIXIE,
     KOTTORIC, VARANUS, URSINAE, MINOTAUR,
@@ -10,9 +10,13 @@ public enum Races {
 public class Mob: ScriptableObject  {
 
     public new string name;
+
     public Races race;
+    public string description;
 
     public int health;
+
+    public GameObject body;
 
     public int strength;
     public int intelligence;

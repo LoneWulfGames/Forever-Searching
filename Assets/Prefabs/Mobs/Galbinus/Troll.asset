@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb0555b8b8fb0b408f3aad8612ec826, type: 3}
+  m_Name: Troll
+  m_EditorClassIdentifier: 
+  name: Name
+  race: 5
+  description: Strong but still agile
+  health: 100
+  body: {fileID: 1004265530902232, guid: 022b49324f420c34fa082686db430152, type: 2}
+  strength: 14
+  intelligence: 8
+  dexterity: 8

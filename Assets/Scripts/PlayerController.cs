@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed = 6.0F;
+    public float speed = 6.0F;  //move to mob
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
+
+    public Mob mob;
+
     //add turn speed
     private Vector3 moveDirection = Vector3.zero;
     void Update()

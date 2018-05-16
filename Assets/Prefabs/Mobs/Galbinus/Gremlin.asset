@@ -9,11 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecb0555b8b8fb0b408f3aad8612ec826, type: 3}
-  m_Name: Human
+  m_Name: Gremlin
   m_EditorClassIdentifier: 
-  name: Player
-  race: 0
+  name: Name
+  race: 7
+  description: Very cunning but frail.
   health: 100
-  strength: 10
-  intelligence: 10
-  dexterity: 10
+  body: {fileID: 1004265530902232, guid: 966f591f78c1afe4182e983415f24123, type: 2}
+  strength: 4
+  intelligence: 18
+  dexterity: 8
