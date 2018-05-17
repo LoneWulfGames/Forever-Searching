@@ -9,6 +9,24 @@ public class PlayerController : MonoBehaviour {
     public float gravity = 20.0F;
 
     public Mob mob;
+    public int strength, intelligence, dexterity, health;
+
+    public static PlayerController player;
+    //player stats and info
+
+
+    private void Awake()
+    {
+        if (player == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            player = this;
+        }
+        else if (player != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     //add turn speed
     private Vector3 moveDirection = Vector3.zero;

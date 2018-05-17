@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 public enum Races {
     HUMAN, DWARF, HALFLING, GNOME,
     OGRE, TROLL, GOBLIN, GREMLIN,
@@ -6,7 +7,7 @@ public enum Races {
     KOTTORIC, VARANUS, URSINAE, MINOTAUR,
     REDDRACONIAN, BLUEDRACONIAN, GREENDRACONIAN, GOLDDRACONIAN };
         
-[CreateAssetMenu(fileName = "New Mob", menuName = "Mob")]
+[CreateAssetMenu(fileName = "New Mob", menuName = "Mob"), Serializable]
 public class Mob: ScriptableObject  {
 
     public new string name;
