@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb0555b8b8fb0b408f3aad8612ec826, type: 3}
+  m_Name: Gnome
+  m_EditorClassIdentifier: 
+  name: Name
+  race: 3
+  description: Short and smart, gnnomes prefer to work mines and remain solitairy
+    deep within the mountains.
+  health: 100
+  body: {fileID: 1004265530902232, guid: a9139b3164c7c074eb9ebf8b1756c8cb, type: 2}
+  strength: 6
+  intelligence: 14
+  dexterity: 10
