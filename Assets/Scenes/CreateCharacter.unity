@@ -732,7 +732,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Green
 
-    Draconian'
+    Dragonian'
 --- !u!222 &257043679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1580,7 +1580,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Gold
 
-    Draconian'
+    Dragonian'
 --- !u!222 &715800259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2141,7 +2141,7 @@ GameObject:
   - component: {fileID: 1025022415}
   - component: {fileID: 1025022414}
   m_Layer: 5
-  m_Name: Green Draconian Button
+  m_Name: Green Dragonian Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2387,7 +2387,7 @@ GameObject:
   - component: {fileID: 1058526986}
   - component: {fileID: 1058526985}
   m_Layer: 5
-  m_Name: Red Draconian Button
+  m_Name: Red Dragonian Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3029,7 +3029,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Red
 
-    Draconian'
+    Dragonian'
 --- !u!222 &1186983060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3897,7 +3897,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Black Draconian
+  m_Text: Black Dragonian
 --- !u!222 &1519773252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5192,7 +5192,7 @@ GameObject:
   - component: {fileID: 2055240230}
   - component: {fileID: 2055240229}
   m_Layer: 5
-  m_Name: Gold Draconian Button
+  m_Name: Gold Dragonian Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5315,7 +5315,7 @@ GameObject:
   - component: {fileID: 2098850857}
   - component: {fileID: 2098850856}
   m_Layer: 5
-  m_Name: Black Draconian Button
+  m_Name: Black Dragonian Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

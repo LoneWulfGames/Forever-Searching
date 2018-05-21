@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerInputControl : MonoBehaviour {
 
     public float speed = 6.0F;  //move to mob
     public float jumpSpeed = 8.0F;
@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     public Mob mob;
     public int strength, intelligence, dexterity, health;
 
-    public static PlayerController player;
+    public static PlayerInputControl player;
     //player stats and info
 
 

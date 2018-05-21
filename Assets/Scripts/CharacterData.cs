@@ -4,11 +4,11 @@ using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using UnityEngine.UI;
 
 public class CharacterData : MonoBehaviour {
-
+    
     public static CharacterData character;
-    //player stats and info
 
 
     private void Awake()
@@ -21,7 +21,8 @@ public class CharacterData : MonoBehaviour {
         else if(character != this)
         {
             Destroy(gameObject);
-        } 
+        }
+        SaveCheck();
     }
 
     private void OnGUI()
@@ -29,7 +30,22 @@ public class CharacterData : MonoBehaviour {
         GUI.Label(new Rect(100, 100, 100, 30), "Character data...");
         GUI.Label(new Rect(100, 130, 100, 30), "To be loaded...");
     }
+    public bool SaveCheck()
+    {
+        bool exists; 
+        //if file exists...
+        if (File.Exists(Application.persistentDataPath + "/FSCharacter.dat"))
+        {
+           exists = true;
+        }
+        //if file doesn't exists...
+        else
+        {
+            exists = false;
+        }
+        return exists;
 
+    }
     public void Save()
     {
         //saves Data out to a file
@@ -37,10 +53,10 @@ public class CharacterData : MonoBehaviour {
         FileStream file = File.Open(Application.persistentDataPath + "/FSCharacter.dat", FileMode.Open);
 
         Mob data = new Mob();
-        data.health = PlayerController.player.health;
-        data.strength = PlayerController.player.strength;
-        data.intelligence = PlayerController.player.intelligence;
-        data.dexterity = PlayerController.player.dexterity;
+        data.health = PlayerInputControl.player.health;
+        data.strength = PlayerInputControl.player.strength;
+        data.intelligence = PlayerInputControl.player.intelligence;
+        data.dexterity = PlayerInputControl.player.dexterity;
 
         bf.Serialize(file, data);
         file.Close();
@@ -53,10 +69,10 @@ public class CharacterData : MonoBehaviour {
             FileStream file = File.Open(Application.persistentDataPath + "/FSCharacter.dat", FileMode.Open);
             Mob data = (Mob)bf.Deserialize(file);
             file.Close();
-            PlayerController.player.health = data.health;
-            PlayerController.player.strength= data.strength;
-            PlayerController.player.intelligence= data.intelligence;
-            PlayerController.player.dexterity= data.dexterity;
+            PlayerInputControl.player.health = data.health;
+            PlayerInputControl.player.strength= data.strength;
+            PlayerInputControl.player.intelligence= data.intelligence;
+            PlayerInputControl.player.dexterity= data.dexterity;
         }
     }
 }

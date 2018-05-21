@@ -18,7 +18,6 @@ public class CharacterCreation : MonoBehaviour {
     [SerializeField]
     private Image DEXContent;
 
-
     public Mob mob;
     GameObject selectedRace;
     public Text descText;
@@ -26,7 +25,6 @@ public class CharacterCreation : MonoBehaviour {
     void Start() {
         ShowMob();
     }
-
 
     public void SwapMob(Mob newMob)
     {
@@ -36,7 +34,7 @@ public class CharacterCreation : MonoBehaviour {
     }
     void ShowMob()
     {
-        print("Loading a..." + mob.race);
+        //print("Loading a..." + mob.race);
         selectedRace = Instantiate(mob.body, transform);
         transform.position = Vector3.up * (selectedRace.transform.localScale.y - 1);
         descText.text = mob.description;
